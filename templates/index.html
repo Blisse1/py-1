@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <span style="font-size:2rem;color:blueviolet;">Depreciación Anual</span>
+            <form action="{{url_for('valorMaquinaria')}}" method="POST">
+                Introduzca el valor de la maquinaria: <input type="number" id="valorMaquinaria" name="valorMaquinaria">
+                Introduzca el valor de desecho: <input type="number" id="valorDesecho" name="valorDesecho">
+                Introduzca la vida útil: <input type="number" id="valorVidaUtil" name="valorVidaUtil">
+                <p>La depreciación anual será de: {{depreciacion}} </p>
+                <button type="submit">Calcular</button>
+            </form> 
+        </section>
+    </body>
+</html>
